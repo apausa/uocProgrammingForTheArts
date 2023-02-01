@@ -1,5 +1,5 @@
 {
-  "name": "p5",
+  "name": "p5_vanilla",
   "version": "1.0.0",
   "main": "./sketch.js",
   "repository": "git@github.com:apausa/p5_vanilla.git",
