@@ -1,7 +1,7 @@
 {
   "name": "p5_vanilla",
   "version": "1.0.0",
-  "main": "./sketch.js",
+  "main": "./index.html",
   "repository": "git@github.com:apausa/p5_vanilla.git",
   "author": "Pablo Apausa <pabloapausa@outlook.com>",
   "license": "MIT",
