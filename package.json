@@ -6,6 +6,7 @@
   "author": "Pablo Apausa <pabloapausa@outlook.com>",
   "license": "MIT",
   "dependencies": {
+    "ml5": "^0.12.2",
     "p5": "^1.5.0"
   }
 }
