@@ -1,12 +1,18 @@
 {
-  "name": "p5_vanilla",
+  "name": "p5",
   "version": "1.0.0",
-  "main": "./index.html",
+  "main": "./src/pages/index.html",
   "repository": "git@github.com:apausa/p5_vanilla.git",
   "author": "Pablo Apausa <pabloapausa@outlook.com>",
   "license": "MIT",
   "dependencies": {
     "ml5": "^0.12.2",
     "p5": "^1.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-p5js": "^1.0.0"
   }
 }
