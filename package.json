@@ -2,7 +2,7 @@
   "name": "p5",
   "version": "1.0.0",
   "main": "./src/pages/index.html",
-  "repository": "git@github.com:apausa/p5_vanilla.git",
+  "repository": "git@github.com:apausa/p5.git",
   "author": "Pablo Apausa <pabloapausa@outlook.com>",
   "license": "MIT",
   "dependencies": {
