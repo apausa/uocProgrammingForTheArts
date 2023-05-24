@@ -7,8 +7,8 @@ function setup() {
 }
 
 function draw() {
-  const val1 = random(0, width);
-  const val2 = random(0, height);
+  const val1 = round(random(0, width));
+  const val2 = round(random(0, height));
   
   fill(255);
   textAlign(CENTER);

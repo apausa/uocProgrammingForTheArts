@@ -1,17 +1,15 @@
-const shapes = [];
+let shape = null;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  const s = new Shape();
-  
-  shapes.push(s);
+  shape = new Shape();
 }
 
 function draw() {
   background(0, 0, 0, 8);
   
-  shapes[0].generate();
-  shapes[0].animate();
+  shape.generate();
+  shape.animate();
 }
 
 class Shape {

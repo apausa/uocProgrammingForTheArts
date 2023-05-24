@@ -1,18 +1,16 @@
-const types = {SLOW: 'SLOW', FAST: 'FAST'}; 
-const shapes = [];
+const types = {SLOW: 'SLOW', FAST: 'FAST', STOP: 'STOP'}; 
+let shape = null;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  
-  const s = new Shape();
-  shapes.push(s);
+  shape = new Shape();
 }
 
 function draw() {
   background(0, 0, 0, 8);
   
-  shapes[0].generate();
-  shapes[0].animate(types.SLOW);
+  shape.generate();
+  shape.animate(types.SLOW);
 }
 
 class Shape {
@@ -23,7 +21,7 @@ class Shape {
   }
   
   animate(type) {
-    if (this.x > width / 2) return; 
+    if (this.x > width / 2 || type === types.STOP) return; 
     if (type === types.SLOW) this.x += 2;
     if (type === types.FAST) this.x += 4;
   }

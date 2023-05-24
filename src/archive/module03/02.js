@@ -1,7 +1,7 @@
 let img = null;
 
 function preload() {
-  img = loadImage("https://codelab.uoc.edu/filemanager/source_repo/pablu/FhbRgcOWQAABTsk.jpg")
+  img = loadImage("https://codelab.uoc.edu/filemanager/source_repo/pablu/artboard.png")
 }
 
 function setup() {

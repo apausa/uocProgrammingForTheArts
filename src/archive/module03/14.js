@@ -1,4 +1,4 @@
-let lineY = 0;
+let lineY = 0; // global variable
 
 function setup() {
   createCanvas(500, 500);
@@ -6,7 +6,7 @@ function setup() {
 
 function draw() {
   const halfWidth = width / 2;
-  const brightness = map(lineY, 0, width, 0, 255)
+  const brightness = map(lineY, 0, height, 0, 255)
 
   background('#000');
 

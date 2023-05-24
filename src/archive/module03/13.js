@@ -1,17 +1,17 @@
-const canvasWH = 500;
-let circleX = canvasWH / 2;
-let circleY = canvasWH / 2;
+let position = 0; // global variable
 
 function setup() {
-  createCanvas(canvasWH, canvasWH);
+  createCanvas(500, 500);
 }
 
 function draw() {
-  circleX = (circleX === width) ? 0 : circleX + 1; 
-  circleY = (circleX === height) ? 0 : circleY + 1; 
+  const size = 100;
+  
+  position = (position === width + (size / 2))
+    ? (0 - (size / 2)) : position + 1; 
   
   background("#B3A47D");
   noStroke();
   fill(255);
-  circle(circleX, circleY, 100);
+  circle(position, position, 100);
 }

@@ -34,7 +34,6 @@ function setup() {
     animations[i] = new Animation(lines, i)
   }
 }
-
   
 function keyPressed() {
   /* Interacción con el teclado. Cuando se pulsa la barra espaciadora se

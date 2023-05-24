@@ -10,109 +10,96 @@ function setup() {
 function draw() {
   background('#AAA');
 
+  shape.assign();
   shape.generate();
   shape.fall(16); // speed
+
+  if (shape.yPos >= height)
+    shape.reset();
 }
 
 class Shape {
   constructor() {
-    this.y = 0; 
+    this.yPos = 0; 
     this.currentPiece = 0;
-    this.multiplierX = [null, null, null, null];
-    this.multiplierY = [null, null, null, null];
-  }
-  
-  fall(speed) {
-    this.y = this.y + speed;
-
-    if (this.y >= (height)) {
-      this.y = 0;
-      this.currentPiece = round(random(0, 4));
-    }
-  }
-  
-  transform() {
-    const side = 40;
-    const hw = windowWidth / 2;
-    this.module = side / 2;
-    
-    for (let i = 0; i < 4; i++) {
-      const x = hw + this.module * this.multiplierX[i];
-      const y = this.y + this.module * this.multiplierY[i];
-
-      square(x, y, side);
-    }
+    this.xMultipliers = [null, null, null, null];
+    this.yMultipliers = [null, null, null, null];
   }
 
-  assignMetadata0() {
+  assignYellowPiece() {
     const yellow = '255, 255, 0';
-    this.multiplierX = [-1, 1, -1, 1];
-    this.multiplierY = [-1, -1, 1, 1];
+    this.xMultipliers = [-1, 1, -1, 1];
+    this.yMultipliers = [-1, -1, 1, 1];
 
     stroke(`rgba(${yellow}, 1)`);
     fill(`rgba(${yellow}, 0.5)`);
   }
   
-  assignMetadata1() {
+  assignBluePiece() {
     const blue = '0, 0, 255';
-    this.multiplierX = [-1, -1, -1, 1];
-    this.multiplierY = [-1, -3, 1, 1];
+    this.xMultipliers = [-1, -1, -1, 1];
+    this.yMultipliers = [-1, -3, 1, 1];
 
     stroke(`rgba(${blue}, 1)`);
     fill(`rgba(${blue}, 0.5)`);
   }
   
-  assignMetadata2() {
+  assignRedPiece() {
     const red = '255, 0, 0';
-    this.multiplierX = [0, 0, 0, 0];
-    this.multiplierY = [-1, -3, 1, 3];
+    this.xMultipliers = [0, 0, 0, 0];
+    this.yMultipliers = [-1, -3, 1, 3];
 
     stroke(`rgba(${red}, 1)`);
     fill(`rgba(${red}, 0.5)`);
   }
   
-  assignMetadata3() {
+  assignGreenPiece() {
     const green = '0, 255, 0';
-    this.multiplierX = [-1, -1, 1, 1];
-    this.multiplierY = [-1, -3, -1, 1];
+    this.xMultipliers = [-1, -1, 1, 1];
+    this.yMultipliers = [-1, -3, -1, 1];
     
     stroke(`rgba(${green}, 1)`);
     fill(`rgba(${green}, 0.5)`);
   }
   
-  assignMetadata4() {
+  assignMagentaPiece() {
     const magenta = '255, 0, 255';
-    this.multiplierX = [0, 0, -2, 2];
-    this.multiplierY = [-1, 1, 1, 1];
+    this.xMultipliers = [0, 0, -2, 2];
+    this.yMultipliers = [-1, 1, 1, 1];
 
     stroke(`rgba(${magenta}, 1)`);
     fill(`rgba(${magenta}, 0.5)`);
   }
   
-  generate() {
+  assign() {
     switch(this.currentPiece) {
-      case 0:
-        this.assignMetadata0();
-        this.transform();
-        this
-        break;
-      case 1:
-        this.assignMetadata1();
-        this.transform();
-        break;
-      case 2:
-        this.assignMetadata2();
-        this.transform();
-        break;
-      case 3:
-        this.assignMetadata3();
-        this.transform();
-        break;
-      case 4:
-        this.assignMetadata4();
-        this.transform();
-        break;
+      case 0: this.assignYellowPiece(); break;
+      case 1: this.assignBluePiece(); break;
+      case 2: this.assignRedPiece(); break;
+      case 3: this.assignGreenPiece(); break;
+      case 4: this.assignMagentaPiece(); break;
       default: break;
     }
+  }
+    
+  generate() {
+    const module = 40;
+    const halfModule = module / 2;
+
+    for (let i = 0; i < 4; i++) {
+      const x = (windowWidth / 2) + halfModule * this.xMultipliers[i];
+      const y = this.yPos + halfModule * this.yMultipliers[i];
+
+      square(x, y, module);
+    }
+  }
+
+  fall(speed) {
+    this.yPos = this.yPos + speed;
+  }
+
+  reset() {
+    this.yPos = 0;
+    this.currentPiece = round(random(0, 4));
   }
 }

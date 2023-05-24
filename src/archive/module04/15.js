@@ -1,17 +1,16 @@
 let cover = null; 
+const metadata = {
+  background: '#000',
+  id: '1', 
+  title: 'Pedro Paramo',
+  author: 'Juan Rulfo',
+  editorial: 'Editorial RM',
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   textAlign(CENTER);
   noLoop();
-  
-  const metadata = {
-    background: '#000',
-    id: '1', 
-    title: 'Pedro Paramo',
-    author: 'Juan Rulfo',
-    editorial: 'Editorial RM',
-  }
   
   cover = new Cover(metadata); 
 }

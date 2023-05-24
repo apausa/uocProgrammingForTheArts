@@ -1,4 +1,4 @@
-let x = 0;
+let x = 0; // global variable
 const type = {SLOW: 'SLOW', FAST: 'FAST'}; 
 
 function setup() {

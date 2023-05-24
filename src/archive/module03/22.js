@@ -21,10 +21,11 @@ function setup() {
 
 function draw() {
   background('#000');
+  pacMan.generate();
   balls.forEach(ball => {
     ball.generate();
-    ball.intersect(pacMan)})
-  pacMan.generate();
+    ball.intersect(pacMan)
+  })
   
   if (keyIsDown(LEFT_ARROW)) pacMan.moveLeft();
   if (keyIsDown(RIGHT_ARROW)) pacMan.moveRight(); 
@@ -68,7 +69,7 @@ class Pacman {
     if ((this.x + this.hw) < 0) { // when out of frame
       this.x = width; // reset position
       
-      createBalls(this.module); // recreate balls
+      createBalls(this.module); // regenerate balls
       
     } else this.x -= 1;
   }

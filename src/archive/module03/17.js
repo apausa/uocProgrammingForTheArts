@@ -1,5 +1,5 @@
-let x = 50; 
-let velX = 5;
+let x = 50; // global variable
+let velX = 5; // global variable
 
 function setup() {
   createCanvas(500, 500);

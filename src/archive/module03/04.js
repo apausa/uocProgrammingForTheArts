@@ -8,19 +8,18 @@ function preload(){
 
 function setup() {
   createCanvas(482, 482);
+  background(255);
 }
 
 function draw() {
   const pixels = 32;
   const grid = width / pixels;
 
-  background(255);
   img.resize(pixels, pixels);
 
   for(let i = 0; i < pixels; i++){
     for(let j = 0; j < pixels; j++){
-      const c = img.get(i, j);
-      const b = brightness(c);
+      const b = brightness(img.get(i, j));
       const d = map(b, 0, 100, grid, 0);
       
       fill(b);

@@ -1,4 +1,4 @@
-let currentPos = 0;
+let currentPos = 0; // global variable
 
 function setup() {
   createCanvas(500, 500);

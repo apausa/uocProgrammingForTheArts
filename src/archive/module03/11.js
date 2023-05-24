@@ -37,10 +37,8 @@ class Shape {
     const marginTop = this.module * 3;
     const marginBottom = height - (this.module * 3);
       
-    if (this.y <= marginTop || this.y >= marginBottom)
-      this.reverse = !this.reverse;
-    this.y = (this.reverse)
-      ? this.y + 0.5 : this.y - 0.5;
+    if (this.y <= marginTop || this.y >= marginBottom) this.reverse = !this.reverse;
+    this.y = (this.reverse) ? this.y + 0.5 : this.y - 0.5;
   }
   
   generate() {
