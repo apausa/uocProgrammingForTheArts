@@ -124,6 +124,7 @@ const MOCK = {
       }
     ]
   };
+
   const [WIDTH, HEIGHT] = [800, 800];
   
   // Variables globales
