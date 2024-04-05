@@ -6,7 +6,7 @@ Exercises for the 'Programming for The Arts' course within the Bachelor's degree
 ![Module 00, exercise 19](https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/1f378b195588461.660ffbad63b61.png)
 
 ## Module 01, exercise 22
-![Module 01, exercise 22](https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/1f378b195588461.660ffbad63b61.png)
+![Module 01, exercise 22](https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/935504195588461.660ffbad6340c.png)
 
 ## Module 02, exercise 19
 ![Module 02, exercise 19](https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/800a33195588461.660ffbad6420b.png)
