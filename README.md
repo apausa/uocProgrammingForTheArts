@@ -1,6 +1,6 @@
 # Programming for The Arts
 
-Exercises for the 'Programming for The Arts' course within the Bachelor's degree in Digital Design at the Open University of Catalonia (UOC).
+Exercises for the 'Programming for The Arts' course at Universitat Oberta de Catalunya.
 
 ## Module 00, exercise 19
 ![Module 00, exercise 19](https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/1f378b195588461.660ffbad63b61.png)
