@@ -1,3 +1,47 @@
+/* Introducción
+ *
+ * He diseñado un póster para la conferencia de Gianfranco Bertone: 
+ * 'Between two infinities: Our place in the Universe'. Que se celebra el 1
+ * de junio de este año en el Globo de La Ciencia y La Innovación del 
+ * CERN (Organización Europea para la Investigación Nuclear).
+ *
+ * El póster está compuesto por 32 elementos animados con una forma 
+ * circular y distorsionada por la función 'noise', que se inspira en el 
+ * logotipo del CERN y la temática de la conferencia sobre ondas 
+ * gravitacionales. El grosor de su trazo se va desvaneciendo. También
+ * se incluye una imagen con el logotipo (que únicamente se puede
+ * visualizar ejecutando el código desde CodeLab). 
+ *
+ * La paleta de colores en blanco y gris oscuro recuerda al espacio 
+ * exterior. Y el texto combina una tipografía de palo seco como 
+ * Helvetica Nueue, con una tipografía caligráfica como Snell 
+ * Roundhand para hacer el diseño más complejo y elegante.
+ *
+ * La interacción con el ratón ralentiza el tiempo (es decir, el tercer 
+ * parámetro de ruido), cuanto más cerca se encuentre el ratón del 
+ * centro de la animación. Mientras que la interacción con el teclado
+ * genera una nueva semilla de ruido ('noiseSeed'), cuando se pulsa la 
+ * barra espaciadora. Ambas interacciones afectan a la animación.
+ *
+ * Proceso 
+ *
+ * Siempre he querido trabajar con la función 'noise()'. Así que comencé 
+ * a experimentar con ella, aplicándola al movimiento de partículas que
+ * chocaban entre si, para representar los experimentos de la 
+ * organización. Sin embargo, acabé descartando esta primera idea 
+ * porque no me convencía visualmente
+ *
+ * Así que continué aplicando la función noise() al movimiento de los
+ * vértices de un círculo para representar el logotipo del CERN y
+ * demostrar lo aprendido en la idea anterior. 
+ *
+ * Bibliografía 
+ *
+ * CERN. (2023). Between two infinities: Our place in the Universe – a
+ * conference by Gianfranco Bertone on 1 June. https://home.cern/news/
+ * announcement/cern/between-two-infinities-our-place-universe-
+ * conference-gianfranco-bertone-1 */
+
 // Variables globales
 
 const animations = [];

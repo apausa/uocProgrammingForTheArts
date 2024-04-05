@@ -1,3 +1,36 @@
+/* Idea
+
+ * He desarrollado una animación con las palabras de cada titular 
+ * resultante al buscar 'creative artificial intelligence' en la API de 
+ * GNews. Así, he continuado la experimentación que comencé en el 
+ * anterior ejercicio con el método 'noise', para representar con 
+ * palabras el movimiento de insectos alrededor de una luz en 
+ * referencia a la idea de una inteligencia artificial que cobra vida. 
+ * 
+ * Código 
+
+ * Si la llamada a la API se completa, entonces se indexan los titulares 
+ * de la respuesta, pero si no se completa, entonces se registran los 
+ * titulares del 'mock' para asegurar que la animación funciona 
+ * siempre. El código también carga la tipografía OCR-A.
+ * 
+ * Después, se instancia una clase para controlar el estado de los 
+ * titulares. La propiedad 'words' es un array de objetos con la
+ * información de cada palabra del titular actual, como su
+ * posición o coordenadas de ruido.
+ * 
+ * Interacción
+ * 
+ * La interacción con el ratón cambia el color de una palabra a negro
+ * cuando se hace click en ella. Que recupera el color si se vuelve a 
+ * hacer click. Así, se pueden destacar palabras para generar un nuevo 
+ * significado.
+ * 
+ * Mientras que la interacción con el teclado, renderiza las palabras del 
+ * siguiente titular y genera un nuevo 'backgroundColor' y 'textColor' 
+ * cuando se pulsa la barra espaciadora. Además, vuelve a empezar 
+ * otra vez cuando se llega al final. */
+
 // Constantes
 const MOCK = {
     "totalArticles": 448,
@@ -253,3 +286,5 @@ const MOCK = {
     }
   }
   
+
+   
