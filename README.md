@@ -3,7 +3,7 @@
 Generative art in p5.js, as part of the 'Programming for The Arts' course within the Bachelor's Degree in Digital Design.
 
 ## Block 2, exercise 22
-![Block 2, exercise 22](screenshots/block2.png.ng)
+![Block 2, exercise 22](screenshots/block2.png)
 
 ## Block 3, exercise 19
 ![Block 3, exercise 19](screenshots/block3.png)
