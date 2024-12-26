@@ -1,15 +1,15 @@
 # Creative Coding
 
-Generative art in p5.js, as part of the 'Programming for The Arts' course within the Bachelor's Degree in Digital Design at UOC.
+Generative art in p5.js, as part of the 'Programming for The Arts' course within the Bachelor's Degree in Digital Design.
 
-## Module 01, example 22
-![Module 01, exercise 22](https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/376c99197039937.66298e713f083.png)
+## Block 2, exercise 22
+![Block 2, exercise 22](screenshots/block2.png.ng)
 
-## Module 02, example 19
-![Module 02, exercise 19](https://mir-s3-cdn-cf.behance.net/project_modules/fs/2557b1197039937.66298e713f8dd.png)
+## Block 3, exercise 19
+![Block 3, exercise 19](screenshots/block3.png)
 
-## Module 03, example 24
-![Module 03, exercise 24](https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/ffb600197039937.66298e713e93a.png)
+## Block 4, exercise 24
+![Block 4, exercise 24](screenshots/block4.png)
 
-## Module 04, example 17
-![Module 04, exercise 17](https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/3c8bd0197039937.66298e713fd8b.png)
+## Block 5, exercise 17
+![Block 5, exercise 17](screenshots/block5.png)
