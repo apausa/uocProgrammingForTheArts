@@ -1,6 +1,6 @@
 # Creative Coding
 
-Generative art in p5.js, as part of the 'Programming for The Arts' course within the Bachelor's Degree in Digital Design.
+Generative art in p5.js from the 'Programming for The Arts' course within the Bachelor's Degree in Digital Design.
 
 ## Block 2, exercise 22
 ![Block 2, exercise 22](screenshots/block2.png)
